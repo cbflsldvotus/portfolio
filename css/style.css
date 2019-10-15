@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+clearfix{*zoom:1;}
+clearfix:after{display: block; clear: both; content: '';}
+
+body{font-family: '굴림','gulim';}
+#wrap{width: 1920px;}
+
+/* header-logo */
+header{
+  position: fixed;
+  top:0;
+  z-index: 500;
+  width: 1920px; 
+  height: 100px; 
+  background-color:#ba000c;
+}
+
+header>.top_area{
+  position: relative; 
+  width: 1280px; 
+  height: 100px; 
+  margin: 0 auto; 
+}
+header>.top_area>h1{
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 96px; 
+ 
+}
+header>.top_area>h1>a{
+  display: block;
+  height: 96px;
+  text-indent: -9999px;
+  background-image: url(../image/logo.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* header-nav */
+header>.top_area>nav>ol{
+  position: absolute; 
+  right: 3px; 
+  top: 30px; 
+  width: 462px;
+}
+header>.top_area>nav>ol>li{
+  float: left; 
+  margin-right: 30px; 
+} 
+header>.top_area>nav>ol>li:last-child{margin-right: 0;}
+header>.top_area>nav>ol>li>a{
+  display: block;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+}
+header>.top_area>nav>ol>li:nth-child(1)>a:hover{color: yellow;}
+header>.top_area>nav>ol>li:nth-child(2)>a:hover{color: yellow;}
+header>.top_area>nav>ol>li:nth-child(3)>a:hover{color: yellow;}
+header>.top_area>nav>ol>li:nth-child(4)>a:hover{color: yellow;}
+
+header>.top_area>nav>ol>li:nth-child(1).on>a{color: yellow;}
+header>.top_area>nav>ol>li:nth-child(2).on>a{color: yellow;}
+header>.top_area>nav>ol>li:nth-child(3).on>a{color: yellow;}
+header>.top_area>nav>ol>li:nth-child(4).on>a{color: yellow;}
+
+
+/* section - HOME */
+section{
+  width: 1920px;
+  margin-top: 100px;
+}
+section>.home{
+  width: 1920px;
+  height: 640px;
+}
+section>.home>ul{
+  position: relative;
+}
+section>.home>ul>li{
+  position: absolute;
+  width: 1920px;
+  height: 640px;
+  text-indent: -9999px;
+}
+
+section>.home>ul>li:nth-child(1){
+  background-image: url(../image/main1.jpg);
+}
+section>.home>ul>li:nth-child(2){
+  background-image: url(../image/main2.jpg);
+}
+
+
+/* section - ABOUT */
+section>.about{
+		position: relative;
+		z-index: 300;
+		padding-top: 400px;
+		width: 1280px;
+		height: 1200px;
+		margin: 0 auto;
+}
+section>.about>div{
+		position: absolute;
+		top: 50%;
+		margin-top: -25%;
+		height: 1200px;
+		line-height: 1.5;
+}
+section>.about>div>h2{
+		margin: 60px 0;
+		padding-left: 200px;
+		color: #ba000c;
+		font-weight: 800;
+		font-size: 30px;
+}
+section>.about>div>p{
+		color: #646464;
+}
+section>.about>div>p:first-of-type{
+		margin: 50px 0;
+		font-weight: 800;
+		font-size: 16px;
+		text-align: center;
+}
+section>.about>div>p:first-of-type~p{
+		margin: 15px 0;
+		padding-left: 130px;
+		font-weight: 500;
+		font-size: 20px;
+}
+section>.about>div>.imgbox{
+		position: absolute;
+		left: 0;
+		top: -345px;
+		z-index: 300;
+		width: 1150px;
+		height: 1200px;
+		padding-left: 0;
+		text-indent: -9999px;
+		background-image: url(../image/about1.gif),
+											url(../image/about2.jpg),
+											url(../image/about3.jpg);
+		background-position: center 30px,
+												 200px 1000px,
+												 750px 1000px;
+		background-size: 600px 300px,
+										 500px 200px,
+										 300px 230px;
+		background-repeat: no-repeat;
+}
+
+
+/* section - NEW */
+section>.new{ 
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+  height: 700px;
+}
+section>.new>.slides-container{
+  position: absolute;
+  width: 7680px;
+}
+section>.new>.slides-container>li{
+		float: left;
+		width: 1920px; 
+		background-position: center center;
+		background-size: cover;
+}
+section>.new>.slides-container>li:nth-child(1){
+		background-image: url(../image/new1.jpg);
+}
+section>.new>.slides-container>li:nth-child(2){
+		background-image: url(../image/new2.jpg);
+}
+section>.new>.slides-container>li:nth-child(3){
+		background-image: url(../image/new3.jpg);
+}
+section>.new>.slides-container>li:nth-child(4){
+		background-image: url(../image/new4.jpg);
+}
+section>.new>.slides-container>li>a{
+		display: block;
+		height: 700px;
+		text-indent: -9999px;
+}
+
+section>.new>.slides-pagination{
+		position: absolute;
+		left: 50%;
+		bottom: 40px;
+		margin-left: -55px;
+}
+section>.new>.slides-pagination>li{
+		float: left;
+		width: 18px;
+		margin-right: 10px;
+		background-image: url(../image/bul.png);
+}
+section>.new>.slides-pagination>li:last-child{
+		margin-right: 0;
+}
+section>.new>.slides-pagination>li:hover,
+section>.new>.slides-pagination>li.on{
+		background-position: 0 -18px;
+}
+section>.new>.slides-pagination>li>a{
+		display: block;
+		height: 18px;
+		text-indent: -9999px;
+}
+
+section>.new>button{
+		background: none;
+		border: none;
+		outline: none;
+		display: block;
+		position: absolute;
+		top: 300px;
+		width: 80px;
+		height: 100px;
+		text-indent: -9999px;
+		background-image: url(../image/controls.png);
+}
+section>.new>button.prev{
+		left: 20px;
+		background-position: -5px -225px;
+}
+section>.new>button.prev:hover{
+		background-position: -5px -335px;
+}
+section>.new>button.next{
+		right: 20px;
+		background-position: -5px -5px;
+}
+section>.new>button.next:hover{
+		background-position: -5px -115px;
+}
+
+
+/* section - BEST */
+section>.best{
+  width: 1920px;
+}
+section>.best>p{
+  height: 962px;
+  background-image: url(../image/best3.jpg);
+  background-repeat: no-repeat;
+}
+section>.best>p>span{
+  position: absolute;
+  left: -9999px;
+}
+
+
+/* footer */
+footer{
+  width: 1920px;
+  height: 100px;
+  background-color:#ba000c; 
+}
+footer>address{ 
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 100px;
+  text-align: center;
+}
